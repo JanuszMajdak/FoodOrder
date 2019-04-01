@@ -1,4 +1,7 @@
 package januszmajdak.pl.foodorder.repositories;
 
-public interface ProductRepository {
+import januszmajdak.pl.foodorder.entities.product.Product;
+import org.springframework.data.repository.CrudRepository;
+
+public interface ProductRepository extends CrudRepository<Product,Long> {
 }
