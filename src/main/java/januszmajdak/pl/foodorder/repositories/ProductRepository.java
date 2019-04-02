@@ -1,7 +1,12 @@
 package januszmajdak.pl.foodorder.repositories;
 
 import januszmajdak.pl.foodorder.entities.product.Product;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ProductRepository extends CrudRepository<Product,Long> {
+import java.util.Optional;
+
+
+public interface ProductRepository extends JpaRepository<Product, Long> {
+
+    Optional<Product> findByNameIgnoreCase(String name);
 }

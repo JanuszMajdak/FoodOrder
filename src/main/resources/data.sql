@@ -1,8 +1,8 @@
-INSERT INTO product(id, price, name, brief_description, description)VALUES (1, 33.20, 'Pierogi ruskie kręcone na kolanie', '12szt z surówką', 'Używamy ' ||
- '2 kolana, 4 łokcie i 1 język oraz mąkę krupczatkę trzykrotnie przesiewaną'), (2, 45.10, 'Pierogi nadziewane dziczyzną', '10szt z surówką', 'Używamy ' ||
- 'od początku dzikich kurczaków i wszyscy klienci mówią, że smaczna ta dziczyzna'), (3, 21.00, 'Pierogi w onucach', '6szt z surówką', 'Używamy wyprane rok temu onuce i klienci mówią, że pycha'), (4, 19.90, 'Pierogi z makiem i rodzynkami', '9szt ', 'Używamy ' ||
- 'maku z własnej pilnie strzeżonej uprawy w piwnicy u szwagra i rodzynek przemycanych prosto z Mongolii'),(5, 33.20, 'Pierogi z kapustą', '11szt z surówką', 'Używamy ' ||
- 'pekińską kapustę sprowadzoną z Chin a wyhodowaną pod Warszawą, robot z Korei i musztardę z Francji a wszystko przyrządza nasz jednyny pracownik z Ukrainy');
+INSERT INTO product(id, price, name, brief_description, img_url, description)VALUES (1, 33.20, 'Pierogi ruskie kręcone na kolanie', '12 szt z surówką','/img/pierogi1.jpg','Używamy 2 kolana, 4 łokcie i 1 język oraz mąkę krupczatkę trzykrotnie przesiewaną');
+INSERT INTO product(id, price, name, brief_description, img_url, description)VALUES(2, 45.10, 'Pierogi nadziewane dziczyzną', '10 szt z surówką','/img/pierogi2.jpg', 'Używamy od początku dzikich kurczaków i wszyscy klienci mówią, że smaczna ta dziczyzna');
+INSERT INTO product(id, price, name, brief_description, img_url, description)VALUES(3, 21.00, 'Pierogi w onucach', '6 szt z surówką','/img/pierogi3.jpg','Używamy wyprane rok temu onuce i klienci mówią, że pycha');
+INSERT INTO product(id, price, name, brief_description, img_url, description)VALUES(4, 29.90, 'Pierogi z makiem i rodzynkami', '9szt z surówką ', '/img/pierogi4.jpg','Używamy maku z własnej pilnie strzeżonej uprawy w piwnicy u szwagra i rodzynek przemycanych prosto z Mongolii');
+INSERT INTO product(id, price, name, brief_description, img_url, description)VALUES(5, 33.20, 'Pierogi z kapustą', '11 szt z surówką','/img/pierogi5.jpg','Używamy pekińską kapustę sprowadzoną z Chin a wyhodowaną pod Warszawą, robot z Korei i musztardę z Francji a wszystko przyrządza nasz jednyny pracownik z Ukrainy');
 
 
  INSERT INTO customer_order(id, address, telephone, status )VALUES (1,'Kochanowskiego 23/1, 42-940 Warszawa', '123987345','NEW'),

@@ -12,19 +12,15 @@ public class Product {
     private BigDecimal price;
     private String name;
     private String briefDescription;
+    private String imgUrl;
     @Column(length = 1024)
     private String description;
+
 
     public Product() {
     }
 
-    public Product(Long id, BigDecimal price, String name, String briefDescription, String description) {
-        this.id = id;
-        this.price = price;
-        this.name = name;
-        this.briefDescription = briefDescription;
-        this.description = description;
-    }
+
 
     public Long getId() {
         return id;
@@ -58,6 +54,14 @@ public class Product {
         this.briefDescription = briefDescription;
     }
 
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -65,4 +69,6 @@ public class Product {
     public void setDescription(String description) {
         this.description = description;
     }
+
+
 }

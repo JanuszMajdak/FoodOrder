@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${product.name}">Pierogi ruskie kręcone na kolanie</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="../static/css/main.css"th:href="@{/css/main.css}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="col-lg-8 offset-lg-2">
+        <img src="../static/img/pierogi1.jpg"th:src="@{${product.imgUrl}}" class="img-fluid" alt="Pierogi ruskie kręcone na kolanie" />
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+            <h1 class="text-center"th:text="${product.name}">Pierogi ruskie kręcone na kolanie</h1>
+            <h3 class="text-center"th:text="|Cena${product.price}zł|">Cena: 33.20zł</h3>
+            <p class="text-justify"th:text="${product.description}">Używamy 2 kolana, 4 łokcie i 1 język oraz mąkę krupczatkę trzykrotnie przesiewaną</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
