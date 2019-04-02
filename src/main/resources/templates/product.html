@@ -16,6 +16,9 @@
             <h1 class="text-center"th:text="${product.name}">Pierogi ruskie kręcone na kolanie</h1>
             <h3 class="text-center"th:text="|Cena${product.price}zł|">Cena: 33.20zł</h3>
             <p class="text-justify"th:text="${product.description}">Używamy 2 kolana, 4 łokcie i 1 język oraz mąkę krupczatkę trzykrotnie przesiewaną</p>
+            <a href="#" th:href="@{/order/add(productId=${product.id})}" class="btn btn-sm btn-primary">
+                Dodaj do zamówienia
+            </a>
         </div>
     </div>
 </div>

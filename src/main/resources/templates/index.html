@@ -13,24 +13,29 @@
         <div class="container text-center text-black jumbo-container">
             <h1 class="display-3">Pierogi po naszemu :)</h1>
             <p>Witaj u nas. Zamawiaj co chcesz i ile chcesz, a i tak dostaniesz to co będzie akurat na stanie:).</p>
+            <a th:href="@{/order}">Zamowienie</a>
         </div>
     </div>
 
     <div th:remove="all-but-first">
-        <div class="media col-6 offset-3"th:each="product:${products}">
+        <div class="media col-6 offset-3" th:each="product:${products}">
             <i class="fas fa-utensils fa-4x"></i>
             <div class="media-body">
-                <a href="#"th:href="@{|/meal/${#strings.replace(product.name,'','-').toLowerCase()}|}">
-                <h5 th:text="|${product.name}(${product.price}zł)|">Pierogi ruskie kręcone na kolanie (33.20zł)</h5>
+                <a href="#" th:href="@{|/meal/${#strings.replace(product.name,'','-').toLowerCase()}|}">
+                    <h5 th:text="|${product.name}(${product.price}zł)|">Pierogi ruskie kręcone na kolanie (33.20zł)</h5>
                 </a>
-                    <p th:text="${product.briefDescription}">12szt z surówką.</p>
+                <p th:text="${product.briefDescription}">12szt z surówką.</p>
+                <a href="#" th:href="@{/order/add(productId=${product.id})}" class="btn btn-sm btn-primary">
+                    Dodaj do zamówienia
+                </a>
+
             </div>
         </div>
         <div class="media col-6 offset-3">
             <i class="fas fa-utensils fa-4x"></i>
             <div class="media-body">
                 <a href="#">
-                <h5>Pierogi nadziewane dziczyzną (45.10zł)</h5>
+                    <h5>Pierogi nadziewane dziczyzną (45.10zł)</h5>
                 </a>
                 <p>10 szt z surówką.</p>
             </div>
@@ -40,7 +45,7 @@
             <i class="fas fa-utensils fa-4x"></i>
             <div class="media-body">
                 <a href="#">
-                <h5>Pierogi w onucach (21.00zł)</h5>
+                    <h5>Pierogi w onucach (21.00zł)</h5>
                 </a>
                 <p>6 szt z surówką.</p>
             </div>
@@ -50,7 +55,7 @@
             <i class="fas fa-utensils fa-4x"></i>
             <div class="media-body">
                 <a href="#">
-                <h5>Pierogi z makiem i rodzynkami (29.90zł)</h5>
+                    <h5>Pierogi z makiem i rodzynkami (29.90zł)</h5>
                 </a>
                 <p>9szt z surówką.</p>
             </div>
@@ -60,7 +65,7 @@
             <i class="fas fa-utensils fa-4x"></i>
             <div class="media-body">
                 <a href="#">
-                <h5>Pierogi z kapustą (33.20zł)</h5>
+                    <h5>Pierogi z kapustą (33.20zł)</h5>
                 </a>
                 <p>11 szt z surówką.</p>
             </div>

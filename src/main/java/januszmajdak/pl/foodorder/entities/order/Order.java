@@ -4,7 +4,6 @@ package januszmajdak.pl.foodorder.entities.order;
 import januszmajdak.pl.foodorder.entities.product.Product;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
