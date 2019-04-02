@@ -1,7 +1,7 @@
 package januszmajdak.pl.foodorder.entities.product;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
+
 
 
 @Entity
@@ -19,7 +19,6 @@ public class Product {
 
     public Product() {
     }
-
 
 
     public Long getId() {
