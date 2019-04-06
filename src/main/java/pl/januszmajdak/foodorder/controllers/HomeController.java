@@ -1,7 +1,7 @@
-package januszmajdak.pl.foodorder.controllers;
+package pl.januszmajdak.foodorder.controllers;
 
-import januszmajdak.pl.foodorder.entities.product.Product;
-import januszmajdak.pl.foodorder.services.ProductService;
+import pl.januszmajdak.foodorder.entities.product.Product;
+import pl.januszmajdak.foodorder.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

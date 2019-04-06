@@ -1,6 +1,6 @@
-package januszmajdak.pl.foodorder.repositories;
+package pl.januszmajdak.foodorder.repositories;
 
-import januszmajdak.pl.foodorder.entities.product.Product;
+import pl.januszmajdak.foodorder.entities.product.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

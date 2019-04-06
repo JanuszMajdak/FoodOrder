@@ -1,11 +1,11 @@
-package januszmajdak.pl.foodorder.controllers;
+package pl.januszmajdak.foodorder.controllers;
 
-import januszmajdak.pl.foodorder.CustomerOrder;
-import januszmajdak.pl.foodorder.entities.order.Order;
-import januszmajdak.pl.foodorder.entities.product.Product;
-import januszmajdak.pl.foodorder.messages.Message;
-import januszmajdak.pl.foodorder.repositories.OrderRepository;
-import januszmajdak.pl.foodorder.repositories.ProductRepository;
+import pl.januszmajdak.foodorder.CustomerOrder;
+import pl.januszmajdak.foodorder.entities.order.Order;
+import pl.januszmajdak.foodorder.entities.product.Product;
+import pl.januszmajdak.foodorder.messages.Message;
+import pl.januszmajdak.foodorder.repositories.OrderRepository;
+import pl.januszmajdak.foodorder.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

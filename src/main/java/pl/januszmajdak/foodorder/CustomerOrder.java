@@ -1,8 +1,8 @@
-package januszmajdak.pl.foodorder;
+package pl.januszmajdak.foodorder;
 
-import januszmajdak.pl.foodorder.entities.order.Order;
-import januszmajdak.pl.foodorder.entities.order.OrderStatus;
-import januszmajdak.pl.foodorder.entities.product.Product;
+import pl.januszmajdak.foodorder.entities.order.Order;
+import pl.januszmajdak.foodorder.entities.order.OrderStatus;
+import pl.januszmajdak.foodorder.entities.product.Product;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.SessionScope;
 

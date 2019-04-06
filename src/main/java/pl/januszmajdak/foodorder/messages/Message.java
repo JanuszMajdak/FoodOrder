@@ -1,4 +1,4 @@
-package januszmajdak.pl.foodorder.messages;
+package pl.januszmajdak.foodorder.messages;
 
 public class Message {
     private String title;

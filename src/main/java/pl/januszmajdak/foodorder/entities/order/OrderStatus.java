@@ -1,4 +1,4 @@
-package januszmajdak.pl.foodorder.entities.order;
+package pl.januszmajdak.foodorder.entities.order;
 
 
 public enum OrderStatus {

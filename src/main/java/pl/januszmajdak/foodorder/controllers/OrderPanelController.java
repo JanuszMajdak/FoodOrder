@@ -1,9 +1,9 @@
-package januszmajdak.pl.foodorder.controllers;
+package pl.januszmajdak.foodorder.controllers;
 
-import januszmajdak.pl.foodorder.entities.order.Order;
-import januszmajdak.pl.foodorder.entities.order.OrderStatus;
-import januszmajdak.pl.foodorder.entities.product.Product;
-import januszmajdak.pl.foodorder.repositories.OrderRepository;
+import pl.januszmajdak.foodorder.entities.order.Order;
+import pl.januszmajdak.foodorder.entities.order.OrderStatus;
+import pl.januszmajdak.foodorder.entities.product.Product;
+import pl.januszmajdak.foodorder.repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,7 +25,7 @@ public class OrderPanelController {
         this.orderRepository = orderRepository;
     }
 
-    @GetMapping("panel/orders")
+    @GetMapping("/panel/orders")
     public String getOrders(@RequestParam(required = false) OrderStatus status, Model model) {
         List<Order> orders;
         if (status == null) {

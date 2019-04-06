@@ -1,4 +1,4 @@
-package januszmajdak.pl.foodorder.entities.product;
+package pl.januszmajdak.foodorder.entities.product;
 
 import javax.persistence.*;
 
@@ -69,5 +69,15 @@ public class Product {
         this.description = description;
     }
 
-
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", price=" + price +
+                ", name='" + name + '\'' +
+                ", briefDescription='" + briefDescription + '\'' +
+                ", imgUrl='" + imgUrl + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }
