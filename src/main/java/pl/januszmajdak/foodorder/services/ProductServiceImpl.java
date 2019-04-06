@@ -1,12 +1,11 @@
-package januszmajdak.pl.foodorder.services;
+package pl.januszmajdak.foodorder.services;
 
-import januszmajdak.pl.foodorder.entities.product.Product;
-import januszmajdak.pl.foodorder.repositories.ProductRepository;
+import pl.januszmajdak.foodorder.entities.product.Product;
+import pl.januszmajdak.foodorder.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 

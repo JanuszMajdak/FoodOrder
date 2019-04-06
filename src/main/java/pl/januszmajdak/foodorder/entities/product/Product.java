@@ -1,7 +1,7 @@
-package januszmajdak.pl.foodorder.entities.product;
+package pl.januszmajdak.foodorder.entities.product;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
+
 
 
 @Entity
@@ -9,7 +9,7 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private BigDecimal price;
+    private Double price;
     private String name;
     private String briefDescription;
     private String imgUrl;
@@ -21,7 +21,6 @@ public class Product {
     }
 
 
-
     public Long getId() {
         return id;
     }
@@ -30,11 +29,11 @@ public class Product {
         this.id = id;
     }
 
-    public BigDecimal getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
@@ -70,5 +69,15 @@ public class Product {
         this.description = description;
     }
 
-
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", price=" + price +
+                ", name='" + name + '\'' +
+                ", briefDescription='" + briefDescription + '\'' +
+                ", imgUrl='" + imgUrl + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

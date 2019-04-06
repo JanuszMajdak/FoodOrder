@@ -1,4 +1,4 @@
-package januszmajdak.pl.foodorder;
+package pl.januszmajdak.foodorder;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

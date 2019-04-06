@@ -1,10 +1,9 @@
-package januszmajdak.pl.foodorder.entities.order;
+package pl.januszmajdak.foodorder.entities.order;
 
 
-import januszmajdak.pl.foodorder.entities.product.Product;
+import pl.januszmajdak.foodorder.entities.product.Product;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
